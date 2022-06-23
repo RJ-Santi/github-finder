@@ -1,5 +1,6 @@
 const githubReducer = (state, action) => {
   switch(action.type) {
+    // Set cases to be dispatched based on action type
     case 'GET_USERS':
       return {
         ...state,

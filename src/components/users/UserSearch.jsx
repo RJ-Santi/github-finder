@@ -9,8 +9,10 @@ function UserSearch() {
   const { users, dispatch } = useContext(GithubContext)
   const { setAlert } = useContext(AlertContext)
 
+  // Function called when text input occurs
   const handleChange = (e) => setText(e.target.value)
 
+  // Function called on submit - handles error for empty strings, dispatch cases from GH Reducer
   const handleSubmit = async (e) => {
     e.preventDefault()
 
